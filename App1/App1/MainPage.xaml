@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:App1"
+             BackgroundImage="mainpagebackgroud.png"
+             x:Class="App1.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness">
+            <OnPlatform.Platforms>
+                <On Platform="iOS" Value="0, 20, 0, 0" />
+
+            </OnPlatform.Platforms>
+        </OnPlatform>
+    </ContentPage.Padding>
+
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="3*" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Column="1" Grid.Row="1"  BackgroundColor="Transparent" RowSpacing="-6" ColumnSpacing="-6">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition>
+                        <RowDefinition.Height>
+                            <OnPlatform x:TypeArguments="GridLength"
+                                  iOS="*"
+                               Android="1.5*"/>
+                        </RowDefinition.Height>
+                    </RowDefinition>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                
+          <!--保留一下颜色      
+                <Button x:Name="ah" Text="Art and History" VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand" TextColor="#c16a01" BackgroundColor="Transparent" Clicked="Ahcd" Grid.Column="0" Grid.Row="0"  />
+
+                <Button x:Name="fw" Text="Food and Wine" TextColor="#c16a01"  BorderColor="Blue" VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand" BackgroundColor="Transparent" Clicked="Fwcd" Grid.Column="0" Grid.Row="1"/>
+
+                <Button x:Name="oa" Text="Outdoor Activities"  VerticalOptions="Center" BorderColor="Blue" TextColor="#c16a01"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="Transparent" Clicked="Oacd" Grid.Column="0" Grid.Row="2"/>
+
+                <Button x:Name="s" Text="Shopping"  VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="Transparent" Clicked="Scd" Grid.Column="0" Grid.Row="3"/>
+
+                <Button x:Name="e" Text="Entertainment" VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="Transparent" Clicked="Ecd" Grid.Column="0" Grid.Row="4"/>
+
+                <Button x:Name="ct" Text="Cultural Tips" VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand" BackgroundColor="#0F3a93e7" Clicked="Ecd" Grid.Column="0" Grid.Row="5"/>
+-->
+                <Button x:Name="ah" Text="Art and History" VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand" TextColor="#FFFFFFFF" BackgroundColor="#BFF27935" Clicked="Ahcd" Grid.Column="0" Grid.Row="0"   />
+
+                <Button x:Name="fw" Text="Food and Wine" TextColor="White"  BorderColor="Blue" VerticalOptions="Center"
+        HorizontalOptions="FillAndExpand" BackgroundColor="#BFF27935" Clicked="Fwcd" Grid.Column="0" Grid.Row="1"/>
+
+                <Button x:Name="oa" Text="Outdoor Activities"  VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="#BFF27935" Clicked="Oacd" Grid.Column="0" Grid.Row="2"/>
+
+                <Button x:Name="s" Text="Shopping"  VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="#BFF27935" Clicked="Scd" Grid.Column="0" Grid.Row="3"/>
+
+                <Button x:Name="e" Text="Entertainment" VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand"   BackgroundColor="#BFF27935" Clicked="Ecd" Grid.Column="0" Grid.Row="4"/>
+
+                <Button x:Name="ct" Text="Cultural Tips" VerticalOptions="Center" BorderColor="Blue" TextColor="White"
+        HorizontalOptions="FillAndExpand" BackgroundColor="#BFF27935" Clicked="Ecd" Grid.Column="0" Grid.Row="5"/>
+
+            </Grid>
+          
+
+
+
+
+        </Grid>
+
+    </ContentPage.Content>
+    
+
+
+        
+  
+</ContentPage>

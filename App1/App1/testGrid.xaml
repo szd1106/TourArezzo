@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App1.testGrid">
+    <ContentPage.Content>
+        <Grid BackgroundColor="Blue" RowSpacing="-19" ColumnSpacing="-10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button Text="0" BackgroundColor="Aqua" Grid.Row="0" Grid.Column="0"/>
+            <Button Text="1" BackgroundColor="CornflowerBlue" Grid.Row="0" Grid.Column="1"/>
+            <Button Text="2" BackgroundColor="DarkCyan" Grid.Row="1" Grid.Column="0"/>
+            <Button Text="3" BackgroundColor="White" Grid.Row="1" Grid.Column="1"/>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

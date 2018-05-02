@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              BackgroundImage="image.jpg"
+             x:Class="App1.Page1">
+    <ContentPage.Content>
+
+
+        <StackLayout>
+            <Grid ColumnSpacing="40">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="45"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Button x:Name="backbutton" Grid.Row="0" Grid.Column="0"  BackgroundColor="Transparent" Image="ireturn.png" />
+                <Button x:Name="homebutton" Grid.Row="0"  Grid.Column="1"   BackgroundColor="Transparent" Image="home.png" />
+                <Button x:Name="settingbutton" Grid.Row="0" Grid.Column="2" BackgroundColor="Transparent" Image="setting.png" />
+            </Grid>
+
+
+            <Label x:Name="ctlabel" Text="Cultural Tips" Font="Bold,20" 
+                   HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="LightSteelBlue" HorizontalOptions="FillAndExpand" HeightRequest="70" Margin="50">
+            </Label>
+      
+        <Grid BackgroundColor="Transparent" HorizontalOptions="Start" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+                <Button x:Name="HP" Text="Helpful 
+                        Phrases"  Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="0" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+                <Button x:Name="SE" Text="Shopping 
+                        Etiquette" Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="0" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+                <Button x:Name="RE" Text="Restautant 
+                        Etiquette" Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="1" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+                <Button x:Name="DT" Text="Dressing 
+                        Tips" Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="1" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+                <Button x:Name="PE" Text="Pedestrian 
+                        Etiquette" Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="2" Grid.Column="0" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+                <Button x:Name="IT" Text="Italian 
+                        Timing" Margin="20" TextColor="White" BackgroundColor="SteelBlue" Grid.Row="2" Grid.Column="1" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand"></Button>
+            </Grid>
+        </StackLayout>
+
+    </ContentPage.Content>
+</ContentPage>
